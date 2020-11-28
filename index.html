@@ -37,7 +37,7 @@
             <h2>CSS Declerations</h2>
             <ul>
                 <li><code>property: value;</code><br></li>
-                <ul><li><code>color: red;</code></li></ul>
+                <ul><li><code>color: red;</code></li><li><code>font-size: 18px;</code></li></ul>
             </ul>
         </section>        
             
@@ -46,22 +46,25 @@
             <ul>
                 <li>
                     <code>element{...}</code><br>
-                    <ul><li><code>p{...} h1{...}</code></li></ul>
+                    <ul><li><code>p{...}</code></li><li><code>h1{...}</code></li></ul>
                 </li>
                 <br>
                 <li>
                     <code>.class{...}</code><br>
-                    <ul><li><code>.card{...}</code></li></ul>
+                    <ul><li><code>&lt;div class="card" &gt;&lt;div/&gt;</code></li><li><code>.card{...}</code></li></ul>
                 </li>
                 <br>
                 <li>
                     <code>#id{...}</code>
-                    <ul><li><code>#main-section{...}</code></li></ul>
+                    <ul><li><code>&lt;div id="main-section" &gt;&lt;div/&gt;</code></li><li><code>#main-section{...}</code></li></ul>
                 </li>
                 <br>
                 <li>
                     <code>[attribute='value']{...}</code>
-                    <ul><li><code>[type:"password"]{...}</code></li></ul>
+                    <ul>
+                        <li><code>&lt;input type="password" /&gt;</code></li>
+                        <li><code>[type:"password"]{...}</code></li>
+                    </ul>
                 </li>
 
             </ul>
@@ -100,10 +103,10 @@
             <h2>Inline CSS</h2>
             <ul>
                 <li>CSS declerations written as a value for the global attribute: <code>style="set of CSS decleratios"</code></li><br>
-                <li><code>&lt;p style="font-size:10px; color:blue;"&gt; some text &lt;p/&gt;</code></li><br>
+                <li><code>&lt;p style="font-size:18px; color:blue;"&gt; some text &lt;p/&gt;</code></li><br>
             </ul>
             <h4 class="title left">precedence :</h4> 
-            <p >highest priority, overrides other internal and external CSS styles.</p>
+            <p >Highest priority, overrides other internal and external CSS styles.</p>
             
             
         </section>
@@ -114,10 +117,15 @@
                 <li><code>&lt;style&gt;</code> tag is placed inside the <code>&lt;head&gt;</code> tag.</li><br>
                 <li><code>&lt;head&gt;</code><br>
                     <code>&lt;style&gt; 
-                        <pre>
-                        font-size:10px; 
-                        color:blue;
-                        </pre> 
+                        <br>
+                        p{ <br>
+                        font-size:18px; <br>
+                        color:blue;<br>
+                        } <br><br>
+                        #main-section{<br>
+                        background: grey; <br>
+                        } <br>
+                        <br> 
                         &lt;style/&gt;</code><br>
                     <code>&lt;head/&gt;</code>
                 </li><br>
@@ -130,7 +138,7 @@
             <h2>External CSS</h2>
             <ul>
                 <li>HTML self-closing tag: <code>&lt;link/&gt;</code></li><br>
-                <li>CSS rules written in seprate file that has the extention .css</li>
+                <li>CSS rules written in seprate file that has the extention .css</li><br>
                 <li><code>&lt;link href="./style.css" type="text/css" rel="stylesheet" /&gt; </code></li><br>
             </ul>
             
