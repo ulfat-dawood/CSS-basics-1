@@ -63,7 +63,6 @@ h1, h2, h3{
 	text-transform: uppercase;
 }
 h2{
-	/* border-bottom: 2px solid #abced4; */
 	color:#abced4;
 	font-weight: 500;
 	width: fit-content;
@@ -72,19 +71,28 @@ h2{
 b{
 	font-weight: 600;
 }
-#entities{
-	display: grid;
-	grid-template-columns: auto auto;
-	width:50%;
-	margin:auto; 
-	align-items: center;
+.color{
+    display: inline-block;
+    margin: .5em 2em; 
+    position: relative;
+    text-transform: uppercase;
 }
-
-#job{
-	border: 1px solid #eee;
-	background: #Fdfdfd; 
-	padding: 1em; 
-	border-radius: 10px;
+.color::before{
+    content: "";
+    position: absolute;
+    left: -25px;
+    top:50%; transform: translateY(-50%);
+    width: 20px; height: 20px; 
+    border-radius: 50%;
+    background: var(--color);
+    
+}
+#box{
+	height: 50px; width: 100px;
+	border-radius: 5px;
+	line-height: 50px;
+	text-align: center;
+	margin: auto;
 }
 
 
