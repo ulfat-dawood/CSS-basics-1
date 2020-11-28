@@ -62,6 +62,9 @@ h1, h2, h3{
 	font-weight:  500;	
 	text-transform: uppercase;
 }
+.left{
+	margin:0; 
+}
 h2{
 	color:#abced4;
 	font-weight: 500;

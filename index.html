@@ -98,20 +98,44 @@
         <h1 class="title">Adding CSS to HTML</h1>
         <section>
             <h2>Inline CSS</h2>
-            style tag
-            precedence: highest priority overrides internal and external CSS
+            <ul>
+                <li>CSS declerations written as a value for the global attribute: <code>style="set of CSS decleratios"</code></li><br>
+                <li><code>&lt;p style="font-size:10px; color:blue;"&gt; some text &lt;p/&gt;</code></li><br>
+            </ul>
+            <h4 class="title left">precedence :</h4> 
+            <p >highest priority, overrides other internal and external CSS styles.</p>
             
             
         </section>
         <section>
             <h2>Internal CSS</h2>
-            style tag
-            precedence: second in priority, overrides external
+            <ul>
+                <li>CSS rules written within the HTML paired tag: <br><code>&lt;style&gt; CSS Rules &lt;style/&gt;</code></li><br>
+                <li><code>&lt;style&gt;</code> tag is placed inside the <code>&lt;head&gt;</code> tag.</li><br>
+                <li><code>&lt;head&gt;</code><br>
+                    <code>&lt;style&gt; 
+                        <pre>
+                        font-size:10px; 
+                        color:blue;
+                        </pre> 
+                        &lt;style/&gt;</code><br>
+                    <code>&lt;head/&gt;</code>
+                </li><br>
+            </ul>
+            
+            <h4 class="title left">precedence :</h4>
+            <p>Second in priority, overrides external CSS styles.</p>
         </section>
         <section>
             <h2>External CSS</h2>
-            link tag
-            precedence: if no inline or internal style found, external CSS is applied. 
+            <ul>
+                <li>HTML self-closing tag: <code>&lt;link/&gt;</code></li><br>
+                <li>CSS rules written in seprate file that has the extention .css</li>
+                <li><code>&lt;link href="./style.css" type="text/css" rel="stylesheet" /&gt; </code></li><br>
+            </ul>
+            
+            <h4 class="title left">precedence :</h4>
+            <p>If no inline or internal style found, external CSS style is applied. </p>
         </section>
 
         
